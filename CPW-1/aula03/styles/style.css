@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+
+}
+#div01{
+    background-color: red;
+    border:5px solid black;
+    /*border-top: 4px solid black;
+    border-right: 6px dashed green;
+    border-bottom: 5px dotted blue;
+    border-left: 9px groove orange;*/
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #444,
+                10px 10px 10px #aaa;
+    /*padding: 10px 5px 30px 15px;*/
+    /*padding: 30px 20px;*/
+    padding: 30px;
+    margin: 50px 30px;
+    width: 50%;
+    height: 500px;
+    box-sizing: border-box;
+}
+#div01 h1{
+    color: white;
+}
+#div02{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    text-align: center;
+    margin: 30px auto;
+    border-radius: 50%;
+}
+#div02 h1{
+    color: white;
+    padding-top: 75px;
+    text-shadow: 2px 2px 2px #222;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#div03{
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+#div04{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
+#bombril{
+    color: white;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50%;
+    background-color: red;
+}
+#bombril #p01{
+    font-size: 45px;
+    margin-right: 20px;
+}
+#bombril #p02{
+    font-size: 45px;
+    margin-left: 20px;
+}
+/*Padding: espçamento interno*/
+/*Margin*/

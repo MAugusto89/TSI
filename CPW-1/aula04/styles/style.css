@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'title';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+#header{
+    /*background-color: #26c281;*/
+    background: linear-gradient(to right,#26c281, #019875);
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+#header h1{
+    color: white;
+    font-family: 'title';
+    font-size: 400%;
+    margin: 0;
+    text-shadow: 3px 3px #555;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#container #menu{
+    width: 15%;
+    background-color: #26a65b;
+    padding: 20px;
+    color: white;
+}
+#container #menu span{
+    font-family: 'bold';
+    font-size: 130%;
+    text-shadow: 2px 2px #333;
+}
+#container #menu ul{
+    padding-left: 0;
+    list-style: none;
+    font-family: 'regular';
+    font-size: 120%;
+}
+#container #menu ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#container #menu ul li:hover{
+    color: #b7f4d8;
+    font-size: 150%;
+    transition: .1s;
+}

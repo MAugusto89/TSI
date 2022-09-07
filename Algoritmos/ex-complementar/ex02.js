@@ -1,0 +1,5 @@
+var e = require('prompt-sync');
+var disco1, disco2, disco3, disco4, disco5;
+var varetas1, varetas2, varetas3;
+
+console.log("Passo 01 \nvaretas1: disco1, disco2, disco3, disco4, disco5,\n\nPasso2\nVaretas2: disco2 \nVaretas3: disco1,\n\nPasso3\nvaretas2: disco1, disco2, \nvaretas3: disco3,\n\nPasso4\nvaretas2: disco1, disco2, disco3,\nvaretas3: disco4,\n\nPasso5\nvaretas2: disco1, disco2, disco3, disco4, \nvaretas3: disco5,\n\nPasso6\nvaretas2: disco1, disco2, disco3, disco4, disco5,\n\n\nPasso7\nvaretas3: disco1,\nvaretas2: disco2, disco3, disco4, disco5,\n\nPasso8\nvaretas3: disco1, disco2,\nvaretas2: disco3, disco4, disco5\n\nPasso9\nvaretas3: disco1, disco2, disco3,\nvaretas2: disco4, disco5n\nvaretas3: disco1, disco2, disco3, disco4,\nvaretas2: disco5\n\nPasso10\nvaretas3: disco1, disco2, disco3, disco4, disco5");

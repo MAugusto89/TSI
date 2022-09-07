@@ -1,0 +1,43 @@
+body{
+    background-color: #60262c;
+}
+#paragrafo1, #paragrafo3, #paragrafo5 {
+    color: #a32633;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#paragrafo2, #paragrafo4 {
+    color: #20252c;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.p-left{
+    font-size: 15px;
+    text-align: left;
+}
+.p-right{
+    text-align: right;
+    font-size: 20px;
+}
+
+ul{
+    list-style-image: url(/img/apple.png);
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+ul li:first-child /*Primeiro item da lista*/{
+    background-color: forestgreen;
+}
+ul li:last-child /*Último item da lista*/{
+    background-color: forestgreen
+}
+
+
+ol{
+    list-style-type: lower-greek;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ol li:nth-child(odd /*ímpar*/){
+    background-color: chartreuse;
+}
+ol li:nth-child(even /*par*/){
+    background-color: violet;
+}
