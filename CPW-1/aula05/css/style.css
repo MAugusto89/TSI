@@ -1,0 +1,105 @@
+:root{
+    --hero-image: url(../img/background.jpg);
+}
+
+body{
+    margin: 0;
+}
+nav{
+    display: flex;
+    background: linear-gradient(to right, #111, #24252a);
+    padding: 20px;
+    column-gap: 10px;
+    align-items: center;
+}
+nav span{
+    color: white;
+    font-family: 'bold';
+    font-size: 150%;
+}
+nav a:first-of-type{
+    margin-left: auto;
+}
+nav a{
+    color: white;
+    font-family: 'regular';
+    text-decoration: none;
+}
+nav a:hover{
+    color: aqua;
+}
+
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), var(--hero-image);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    position: relative;
+}
+#hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    border: 5px solid white;
+    padding: 20px;
+}
+#hero-text h1{
+    margin: 0;
+    font-family: 'bold';
+    font-size: 350%;
+}
+#hero-text p{
+    font-family: 'regular';
+    font-size: 180%;
+}
+
+/*Brand message*/
+.brand-message{
+    display: flex;
+    padding: 20px 30px;
+}
+.brand-message:nth-child(even){
+    background: linear-gradient(to right, #D2691E, #fff);
+    flex-direction: row-reverse;
+}
+/*Brand message Left*/
+.brand-message-left{
+    width: 70%;
+}
+.brand-message-left h1{
+    font-family: 'bold';
+}
+.brand-message-left p{
+    font-family: 'regular';
+    font-size: 120%;
+}
+/*Brand message Right*/
+.brand-message-right{
+    width: 30%;
+    text-align: center;
+}
+.brand-message-right img{
+    width: 50%;
+
+}
+#gear{
+    animation: rotate 5s infinite linear;
+}
+#chart{
+    position: relative;
+    left: -200%;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.brand-message:hover #chart{
+    animation: slideToRight 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    opacity: 1;
+}

@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'title';
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+#header{
+    /*background-color: #26c281;*/
+    background: linear-gradient(to right,#26c281, #019875);
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+}
+#header h1{
+    color: white;
+    font-family: 'title';
+    font-size: 400%;
+    margin: 0;
+    text-shadow: 3px 3px #555;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+#menu{
+    width: 15%;
+    background-color: #26a65b;
+    padding: 20px;
+    color: white;
+}
+#menu span{
+    font-family: 'bold';
+    font-size: 130%;
+    text-shadow: 2px 2px #333;
+}
+#menu ul{
+    padding-left: 0;
+    list-style: none;
+    font-family: 'regular';
+    font-size: 100%;
+}
+#menu ul li{
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#container #menu ul li:hover{
+    color: #b7f4d8;
+    font-size: 150%;
+    transition: .1s;
+}
+#content{
+    width: 85%;
+    padding: 20px;
+    /*display: flex;
+    flex-direction: column;
+    /*
+    flex-direction = row === justify-content = center => centralizar horizontalmente;
+    flex-direction = collumn === align-intens = center => centralizar verticalmente;
+    */
+}
+#content h1{
+    font-family: 'bold';
+}
+#content img{
+    width: 33%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px gray;
+}
+#content p{
+    font-family: 'regular';
+    font-size: 120%;
+}
+#footer{
+    padding: 50px 20px 30px 20px;
+    background-color: #24252a;
+}
+#footer span{
+    font-family: 'bold';
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    #header{
+        padding: 5px 0px;
+    }
+    #header h1{
+        font-size: 200%;
+    }
+    #container{
+        flex-direction: column;
+    }
+    #menu, #content{
+        width: 100%;
+    }
+    #menu{
+        padding: 8px 0;
+    }
+    #menu span{
+        display: none;
+    }
+    #menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0px;
+    }
+    #menu li{
+        margin: 0px 20px;    
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    #content h1{
+        font-size: 170%;
+    }
+    #content img{
+        width: 80%
+    }
+    #content p{
+        font-size: 100%;
+    }
+    #footer{
+        padding: 20px 0;
+        text-align: center;
+    }
+}
